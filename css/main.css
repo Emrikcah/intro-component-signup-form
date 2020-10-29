@@ -195,6 +195,7 @@ body {
     width: 80%;
   }
   .container #form-info {
+    min-width: 540px;
     justify-self: start;
   }
   .container #form-info .form {
