@@ -7,9 +7,15 @@ body {
 }
 
 #text .title {
-  font-size: clamp(2.75rem, 3.5vw, 6.7rem);
+  font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.2;
+}
+
+@media (min-width: 1440px) {
+  #text .title {
+    font-size: 6.7rem;
+  }
 }
 
 #text .inner-text {
