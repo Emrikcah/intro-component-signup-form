@@ -1,0 +1,52 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#text {
+  text-align: center;
+
+  .title {
+    font-size: clamp(2.75rem, 3.5vw, 6.7rem);
+    font-weight: $bold;
+    line-height: 1.2;
+  }
+
+  .inner-text {
+    font-size: clamp(2rem, 3.5vw, 2.1rem);
+    font-weight: $medium;
+  }
+
+  @media (min-width: 900px) {
+    text-align: left;
+  }
+}
+
+#form-info {
+  .add {
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+    text-align: center;
+  }
+
+  .form {
+    input {
+      font-family: inherit;
+      font-size: 1.5rem;
+      font-weight: $semi-bold;
+    }
+
+    .error-text {
+      font-size: 1.2rem;
+      font-weight: $semi-bold;
+    }
+  }
+
+  .btn {
+    font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .terms {
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  }
+}

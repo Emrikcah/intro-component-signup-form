@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: url("../images/bg-intro-mobile.png");
+  @include bgstyles;
+  color: $white;
+
+  @media (min-width: 900px) {
+    background: url("../images/bg-intro-desktop.png");
+    @include bgstyles;
+  }
+}
+
+.container {
+  padding: 8.4rem 2rem;
+  min-height: 100vh;
+  max-width: 540px;
+  margin: 0 auto;
+}

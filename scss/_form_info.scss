@@ -1,0 +1,85 @@
+#form-info {
+  
+  .add {
+    margin-bottom: 3rem;
+    padding: 1.5rem 5rem;
+    border-radius: 0.7rem;
+    background: $blue;
+    box-shadow: $box-shadow;
+  }
+
+  .form {
+    border-radius: 1rem;
+    background: $white;
+    padding: 2rem 2.5rem 3rem;
+    box-shadow: $box-shadow;
+
+  }
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2rem;
+    
+
+    &.error input {
+      border-color: $red;
+    }
+
+    &.error .error-icon,
+    &.error .error-text {
+      visibility: visible;
+    }
+
+    input {
+      width: 100%;
+      padding: 1.6rem 0 2.1rem 3.2rem;
+      border: 0.1rem solid $light-gray;
+      border-radius: 0.5rem;
+      
+
+      &:focus{
+        border: 1px solid $blue;
+      }
+    }
+
+    .error-icon,
+    .error-text {
+      visibility: hidden;
+    }
+
+    .error-icon {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      width: 2rem;
+    }
+
+    .error-text {
+      color: $red;
+      margin-left: auto;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    background-color: $green;
+    border-radius: 5px;
+    border: $green;
+    width: 100%;
+    padding: 1.9rem 3.9rem 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: $semi-bold;
+    cursor: pointer;
+  }
+
+  .terms {
+    display: block;
+    color: $grayish-blue;
+    text-align: center;
+    span {
+      color: red;
+    }
+  }
+}
