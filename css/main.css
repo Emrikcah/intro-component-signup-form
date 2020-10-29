@@ -1,0 +1,202 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#text {
+  text-align: center;
+}
+
+#text .title {
+  font-size: clamp(2.75rem, 3.5vw, 6.7rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#text .inner-text {
+  font-size: clamp(2rem, 3.5vw, 2.1rem);
+  font-weight: 500;
+}
+
+@media (min-width: 900px) {
+  #text {
+    text-align: left;
+  }
+}
+
+#form-info .add {
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  text-align: center;
+}
+
+#form-info .form input {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#form-info .form .error-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#form-info .btn {
+  font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#form-info .terms {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: url("../images/bg-intro-mobile.png");
+  background-color: #ff7a7a;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  body {
+    background: url("../images/bg-intro-desktop.png");
+    background-color: #ff7a7a;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.container {
+  padding: 8.4rem 2rem;
+  min-height: 100vh;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+#text {
+  margin-bottom: 5rem;
+}
+
+#text .title {
+  margin-bottom: 2rem;
+}
+
+#form-info .add {
+  margin-bottom: 3rem;
+  padding: 1.5rem 5rem;
+  border-radius: 0.7rem;
+  background: #6055a5;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#form-info .form {
+  border-radius: 1rem;
+  background: #fff;
+  padding: 2rem 2.5rem 3rem;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#form-info .form-control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#form-info .form-control.error input {
+  border-color: #ff7a7a;
+}
+
+#form-info .form-control.error .error-icon,
+#form-info .form-control.error .error-text {
+  visibility: visible;
+}
+
+#form-info .form-control input {
+  width: 100%;
+  padding: 1.6rem 0 2.1rem 3.2rem;
+  border: 0.1rem solid #cdcdcd;
+  border-radius: 0.5rem;
+}
+
+#form-info .form-control input:focus {
+  border: 1px solid #6055a5;
+}
+
+#form-info .form-control .error-icon,
+#form-info .form-control .error-text {
+  visibility: hidden;
+}
+
+#form-info .form-control .error-icon {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 2rem;
+}
+
+#form-info .form-control .error-text {
+  color: #ff7a7a;
+  margin-left: auto;
+}
+
+#form-info .btn {
+  color: #fff;
+  background-color: #38cc8c;
+  border-radius: 5px;
+  border: #38cc8c;
+  width: 100%;
+  padding: 1.9rem 3.9rem 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#form-info .terms {
+  display: block;
+  color: #b9b6d3;
+  text-align: center;
+}
+
+#form-info .terms span {
+  color: red;
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    padding: 0;
+    max-width: 1440px;
+  }
+  .container #text {
+    justify-self: start;
+    margin: 0;
+    width: 95%;
+  }
+  .container #form-info {
+    justify-self: end;
+  }
+  .container #form-info .form {
+    padding: 4rem 2.5rem 5rem;
+  }
+}
+
+@media (min-width: 1230px) {
+  #form-info {
+    min-width: 540px;
+  }
+}

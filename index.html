@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="text">
+        <h1 class="title">Learn to code by watching others</h1>
+
+        <p class="inner-text">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is
+          great, but understanding how developers think is invaluable.
+        </p>
+      </div>
+
+      <div id="form-info">
+        <p class="add">Try it free 7 days then $20/mo. thereafter</p>
+
+        <form class="form" novalidate data-form>
+          <div class="form-control">
+            <input type="text" placeholder="First Name" data-fn />
+            <img src="images/icon-error.svg" class="error-icon" alt="error" />
+            <small class="error-text"></small>
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Last Name" data-ln />
+            <img src="images/icon-error.svg" class="error-icon" alt="error" />
+            <small class="error-text"></small>
+          </div>
+          <div class="form-control">
+            <input type="email" placeholder="Email Address" data-email />
+            <img src="images/icon-error.svg" class="error-icon" alt="error" />
+            <small class="error-text"></small>
+          </div>
+          <div class="form-control">
+            <input type="password" placeholder="Password" data-password />
+            <img src="images/icon-error.svg" class="error-icon" alt="error" />
+            <small class="error-text"></small>
+          </div>
+
+          <button type="submit" class="btn">Claim your free trial</button>
+
+          <small class="terms">
+            By clicking the button, you are agreeing to our <span>Terms and Services</span>
+          </small>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
