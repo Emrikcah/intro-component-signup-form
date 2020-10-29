@@ -35,21 +35,19 @@ function checkInput(fnInput, lnInput, mailInput, passInput) {
 }
 
 function errorHandler(field, errorMsg) {
-  const remove = document.querySelectorAll(".form-control.error input");
-  
+  const remove = document.querySelectorAll(" input");
   const formControl = field.parentNode;
   const errorText = formControl.querySelector(".error-text");
+
   if (field) {
     formControl.classList.add("error");
     errorText.innerText = errorMsg;
   }
 
-  remove.forEach(ele=>{
-    ele.addEventListener('input',()=> ele.parentNode.classList.remove('error'))
-  })
-
+  remove.forEach((ele) => {
+    ele.addEventListener("input", () => ele.parentNode.classList.remove("error"));
+  });
 }
-
 
 // validateEmail() stackoverflow https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
 function validateEmail(value) {
