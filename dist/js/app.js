@@ -27,6 +27,8 @@ function checkInput(fnInput, lnInput, mailInput, passInput) {
     errorHandler(email, "Required");
   } else if (validateEmail(mailInput) === false) {
     errorHandler(email, "Looks like this is not an email");
+    email.value = 'email@example/com';
+    email.style.color = 'hsl(0,100%,74%)';
   }
 
   if (passInput === "") {
