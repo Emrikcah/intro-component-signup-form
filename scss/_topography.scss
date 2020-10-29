@@ -10,12 +10,12 @@ body {
     font-weight: $bold;
     line-height: 1.2;
     @media(min-width: $desktop){
-      font-size: 6.7rem;
+      font-size: 5rem;
     }
   }
 
   .inner-text {
-    font-size: clamp(2rem, 3.5vw, 2.1rem);
+    font-size: 1.8rem;
     font-weight: $medium;
   }
 
