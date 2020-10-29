@@ -6,9 +6,12 @@ body {
   text-align: center;
 
   .title {
-    font-size: clamp(2.75rem, 3.5vw, 6.7rem);
+    font-size: 2.75rem;
     font-weight: $bold;
     line-height: 1.2;
+    @media(min-width: $desktop){
+      font-size: 6.7rem;
+    }
   }
 
   .inner-text {
