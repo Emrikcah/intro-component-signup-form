@@ -12,7 +12,7 @@ body {
   line-height: 1.2;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   #text .title {
     font-size: 6.7rem;
   }
@@ -187,7 +187,7 @@ body {
     grid-template-columns: 55% 45%;
     align-items: center;
     padding: 0;
-    max-width: 1440px;
+    max-width: 1400px;
   }
   .container #text {
     justify-self: start;
